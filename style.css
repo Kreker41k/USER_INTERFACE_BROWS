@@ -1,0 +1,123 @@
+body{
+    background: rgb(60,60,60);
+    overflow-x:hidden;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.panel{
+    display: flex;
+    justify-content: flex-end;
+    width:99vw;
+    height:4vw;
+    background: rgb(30, 30, 30);
+    border-radius: 1vw;
+}
+
+.Extension_container{
+    position:absolute;
+    top: 10vw;
+}
+
+.Extension{
+    width:30vw;
+    height: 5vw;
+    margin-top: 1vw;
+    background: rgb(50,50,50);
+    border: 0.5vw solid rgb(100,100,100);
+    border-radius: 2vw;
+    color: rgb(255,255,255);
+    font-size: 32px;
+    transition: ease 1s;
+}
+
+.Extension:hover{
+    font-size: 64px;
+}
+
+.Extensions{
+    margin-right: 1vw;
+    margin-top: 0.5vw;
+    width: 3vw;
+    height: 3vw;
+    background-color: rgb(15,15,15);
+    border-radius: 3vw;
+    border: 1px solid rgb(255,255,255);
+    transition: ease 1s;
+}
+
+.Extensions:hover{
+    background-color: rgb(180, 180, 180);
+    border: 2px solid rgb(15,15,15);
+    width: 3.5vw;
+    height: 3.5vw;
+    margin-top: 0.3vw;
+    margin-right: 0.8vw;
+}
+
+.marked{
+    border: 2px solid rgb(255, 217, 0);
+}
+
+.Menu{
+    display: none;
+}
+
+.Menu.open{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    z-index: 1000;
+    width: 50vw;
+    height: 40vw;
+    background-color: rgb(40,40,40);
+    border-radius: 2vw;
+    border: 0.5vw solid rgb(30,30,30);
+    color: rgb(255,255,255);
+    font-family: Arial;
+    margin-left: 25vw;
+    margin-top: 1vw;
+}
+
+.NewExtensions{
+    position: absolute;
+    bottom: 1vw;
+    right: 1vw;
+    width: 3vw;
+    height: 3vw;
+    font-size: 32px;
+    cursor: pointer;
+    color: rgb(255,255,255);
+    background-color: rgb(40,40,40);
+    border-radius: 2vw;
+    border: 0.5vw solid rgb(40,40,40);
+    transition: color 0.3s ease;
+}
+
+.NewExtensions:hover{
+    color: rgb(255, 100, 100);
+}
+
+.CloseMenu {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    width: 3vw;
+    height: 3vw;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(255,255,255);
+    transition: color 0.3s ease;
+}
+
+.CloseMenu:hover {
+    color: rgb(255, 100, 100);
+}
+
+.CloseMenu svg {
+    width: 100%;
+    height: 100%;
+}
